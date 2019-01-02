@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="description" content="Get a state of the art minimum viable product web application">
+    <meta name="description" content="The one place to get your web app minimum viable product or your website up and running">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Thomas Sohet</title>
     <style type="text/css">
+        ::-moz-selection { background: rgba(75, 203, 97, 0.9) }
+        ::selection { background: rgba(75, 203, 97, 0.9); }
+
         html, body {
-            height: 100%;
-            margin: 0;
-            font-family: 'Karla', sans-serif;
-            display: block;
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          font-family: 'Karla', sans-serif;
+          background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12) no-repeat center center fixed;
+          background-size: cover;
+          margin-bottom: 20px;
         }
 
         a {
@@ -20,27 +27,31 @@
           color: #7dde3f;
         }
 
-        ul {
-          margin-left: 0px;
-        }
-
-        #full_screen {
-            min-height: 100vh;
-            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-        }
-
-        .centered {
+        .text-area {
           line-height: 1.5em;
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          margin-top: -200px;
-          margin-left: -400px;
-          max-height: 400px;
-          max-width: 800px;;
           color: white;
           font-size: 100%;
           text-align: left;
+          width: 800px;
+          margin: 10px 40px;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+        }
+
+        @media (max-width : 600px) {
+          .text-area {
+            position: absolute;
+            transform: none;
+            left: 0;
+            top: 0;
+            font-size: 90%;
+            padding: 10px;
+            width: auto;
+            font-size: 100%;
+            margin: 10px 50px;
+          }
         }
 
         button {
@@ -51,6 +62,7 @@
           border: none;
           cursor: pointer;
           box-shadow: 1px 1px 10px #014b73;
+          margin-bottom: 50px;
         }
 
         b {
@@ -59,13 +71,22 @@
           text-align: center;
           font-family: 'Karla', sans-serif;
         }
+
+        h1 {
+          line-height: 1.2em;
+        }
+
+        .outer {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
     </style>
   </head>
   <body>
-    <div id="full_screen">
-      <div class="centered">
+    <div class="row outer">
+      <div class="col-xs-12 col-md-8 text-area">
         <h1>Looking for someone to build your web idea ?</h1>
-        <br>
         <p>Hi, my name is <a target="_blank" href="https://www.linkedin.com/in/thomas-sohet-5291a868/">Thomas Sohet</a>, I am a web developer and programmer living in Brussels, Belgium. I create web applications, Agile I.T. infrastructures and web products.</p>
         <ul>
           <li>Get a fully functional minimum viable product in a record time for 3.000 €.</li>
